@@ -56,13 +56,16 @@ a {
      transition: all .3s ease-in-out;
 }
 
+#titulo_banner {
+     text-shadow: 4px -1px 6px #000000ab;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-     text-shadow: 4px -1px 6px #000000;
      letter-spacing: 0;
      font-weight: normal;
      position: relative;
@@ -723,11 +726,15 @@ margin: 0 15px 20px 15px;
 
 /** end project section **/
 
+#accordionFlushExample {
+     padding: 100px;
+}
+
 
 /** fashion section **/
 
 .fashion img {
-     width: 100%;
+     width: 110%;
 }
 
 
