@@ -128,12 +128,19 @@ ol {
      list-style: none;
 }
 
+#subtitulo {
+     margin: 3px;
+     font-weight: 20px;
+     font-size: 20px;
+     padding-top: 100px;
+     padding-bottom: 30px;
+}
+
+
 p {
-     margin: 0px;
-     font-weight: 500;
-     font-size: 15px;
-     line-height: 24px;
-     padding: 10px;
+     margin: 3px;
+     font-weight: 40px;
+     font-size: 10px;
 }
 
 a {
@@ -247,6 +254,15 @@ button {
 
 /*-- header area --*/
 
+.telefono-link {
+     color: #ffffff; /* Cambiar color de los enlaces */
+     font-weight: normal;
+   }
+   
+.telefono-link:hover {
+     color: #4caf50; /* Cambiar color cuando el ratón pasa sobre el enlace */
+   }
+
 .header {
      width: 100%;
      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra negra en la parte inferior */
@@ -257,6 +273,20 @@ button {
      padding: 10px 0;
      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra negra en la parte inferior */
 }
+
+#areas_de_trabajo {
+     padding: 2px;
+}
+
+/* Estilos para las celdas de la tabla */
+#tabla td, #tabla th {
+     text-align: left; /* Alineación del texto */
+   }
+
+#tabla td {
+     padding-left: 15px;
+     text-align: left;
+   }
 
 ul.conta_icon li a img {
      padding-right: 7px;
