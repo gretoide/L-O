@@ -1,0 +1,287 @@
+
+#converse-chat-launcher {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #25b249;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    box-shadow:         0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAOzSURBVHja7JhPiJVVGIefezXLmWrGbGpGK5MyIswWWtAfZIbKphIXUS1Kg2oTtAppEdXgQLYJo0UTQYtqFzJJaIy1yYVJGSikhjojUliNOUxNoxbq6NPmvXT6GJ17v/kuIdwXDvfc8+c9z/ee853z+05J5WKzMhehNaAb0A3oBnQ+m1mQn2ZgMbAcWApcH2XngD+AQ8A3wNfA4SjPbaVpHi5l4H7geaAbaJmi/WHgE+BjYPD/gF4E9ABPJctsHNgDHAFORnkrcEvMRMV+Ad4B+oC/ax5ZzZMeVIf81/aqL6m3q3PUUtL2EnWeulx9Vx1N+vWrbbWOnwf4EXUkBh1X16lX1NB/sbo5Af+qVvBagZeqwzHYT+qKnDM1S+1VJ8LXZrWlHtCt6rcxyLB6X07gNPUkEe+pB/TL4XxCXZ2Ul9U16hvqXTnAN4bf39UlRULPS168/gCt1L2QRGtAnV0j9EL1t+j/XiydQqCfCaenMtFsVw8k0MfVO3JEuzf6j1bTv1zlabcy8tuB75K6G2K/rtjlwBM59vx+4ARwFfBwEdqjDVgW+S8zdWeBM5myphzQPybBuLcI6IXA/MjvzdQdAfYn/weA9Tmgj4c+qcxeIZGeBZwGjmbqjgGbkv8HgNGcsmA4fmcUAV1RghORsvZB6A2A54AHckJXlplFQP8Vji6LFy1rR4FXYn23Au8Dt00mzqYY58oq21UF/XO82eULrLcBoDfyNwGfAp1JfUfsEG8CC87zQNdF/mQRKu9adVfsoxum0BN9yZ79p7pe7VI3JeVDoQibM2N8H/UfFXG4zFTfDoeDatMF2l6qvuV/bczJbVHSb0UintYUdSJ2JU6fraL96tDY57PdmYevzMQ+taMo6GZ1Szj+QV1QRZ9rQpdsVU9k9POdSbtVSUBezHxATFvlPR2Oz6kra+jXFDr8SbUzo5tvVg+G313q3KKl6evhfH+eT6RJUoe6LXyeVruL1tMt6o4YoC9TV8oBvCz5oFBdW4/PrXvUMxGRu9WrY7lsjGg9HrvMVH7aYsaOJcCv1frQ1VzWlICH4jgfB9aGEmtP2nQCO4HPQq39CpyKA6kp5GsXsCo5oIaBV4EP63Hv0R6SdEmmfCz0dUvcLKU2GqfoDGBOaPJUFvQDGxLNUvi1WHcCPAbsAD4P4EPA7IjiYwE/H5gbKQUdBL6I2dhZ72uxdcCjwFZgC3AwlgmTiP8O4FbgxpiBs8AIMBTQI9O9xyviLq9x1duAbkA3oBvQ9bV/BgBa8danK1QwPgAAAABJRU5ErkJggg==');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  #converse-chat {
+    width: 240px !important;
+    position: fixed !important;
+    bottom: 65px !important;
+    right: 45px !important;
+    margin: 0 20px !important;
+    z-index: 9999999999 !important;
+    display: block !important;
+    /* reset css */
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 100% !important;
+    font: inherit !important;
+    vertical-align: baseline !important;
+    list-style: none !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    content: '' !important;
+    content: none !important;
+    quotes: none !important;
+    line-height: 1 !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    box-shadow:         0px 0px 20px 0px rgba(91, 91, 91, 0.5);
+    border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+  }
+  #converse-chat-cont { border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow: hidden; }
+  
+  #converse-chat.chat_izquierda {
+    right: auto !important;
+    left: 45px !important;
+  }
+  #converse-chat.chat_izquierda #converse-chat-launcher {
+    right: auto;
+    left: 10px;
+  }
+  
+  .converse-chat-input > input {
+    text-align: left !important;
+    max-height: 150px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+  }
+  
+  #converse-chat .converse-chatbox {
+    height: 230px;
+    display: none;
+  }
+  
+  #converse-chat .converse-conversation {
+    border-left: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+  
+    background-color: #fff;
+    padding: 5px 12px 5px 12px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    list-style-image: none;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: rgb(0, 0, 0);
+  }
+  
+  #converse-chat .converse-chat-input {
+    border-left: 1px solid #EDEDED !important;
+    border-right: 1px solid #EDEDED !important;
+    background-color: #fff !important;
+    text-align: center !important;
+    font-family: helvetica, sans-serif !important;
+    text-align: center !important;
+    font-size: 9px !important;
+    letter-spacing: 2px !important;
+    font-weight: bold !important;
+    color: rgb(170, 170, 170) !important;
+    padding-top: 4px !important;
+  }
+  
+  #converse-status-green {
+    display: inline-block;
+    background-color: #42b72a;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    margin-bottom: 2px;
+    margin-right: 3px;
+  }
+  #converse-status-red {
+    display: inline-block;
+    background-color: red;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    margin-bottom: 2px;
+    margin-right: 3px;
+  }
+  
+  #converse-chat .converse-chat-input input {
+    display: inline-block !important;
+    margin: 2px 0px 2px 0px !important;
+    width: 100% !important;
+    border-top: 1px solid #CDCDCD !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+    font-size: 14px !important;
+    font-family: Helvetica, Arial, Geneva, sans-serif !important;
+    padding: 8px !important;
+    color: #000000 !important;
+    vertical-align: middle !important;
+    height: initial !important;
+    float: none !important;
+    line-height: 14px !important;
+    background-color: white !important;
+  }
+  
+  #converse-chat .converse-menu {
+    background-color: #25b249;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+  }
+  
+  #converse-chat .converse-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #converse-chat .converse-menu-icon {
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 10px;
+    padding: 2px;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+  }
+  
+  .message-visitor{
+    text-align:right;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  
+  .converse-msg {
+    float: left; clear: both;
+    border: solid 1px #25b249;
+    background-color: #25b249;
+    border-radius: 0px 6px 6px 6px;
+    padding: 5px 8px 6px;
+    word-wrap: break-word;
+    display: block;
+    margin-bottom: 16px;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 14px;
+    max-width: 80%;
+    min-width: 40%;
+    position: relative;
+  }
+  .converse-msg .converse-user {
+    display: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .converse-msg:before {
+    content: "";
+    position: absolute;
+    border-top: 7px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right-color: inherit!important;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -10px;
+    top: -5px;
+    border-radius: 3px;
+    transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg);
+  }
+  .converse-visitor {
+    text-align: right !important;
+  }
+  .converse-visitor .converse-msg {
+    float: right; clear: both;
+    border: solid 1px #f1f0f0;
+    background-color: #f1f0f0;
+    color: #4b4f56;
+    border-radius: 6px 0px 6px 6px;
+  }
+  .converse-visitor .converse-msg:before {
+    left: auto;
+    border-right: none;
+    border-top: 5px solid transparent;
+    border-left: 14px solid #f1f0f0;
+    border-bottom: 5px solid transparent;
+    right: -11px;
+    top: -4px;
+    border-radius: 3px;
+    transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    -webkit-transform: rotate(-23deg);
+  }
+  .converse-visitor .converse-msg .converse-user {
+    color: #4b4f56;
+  }
+  
+  #converse-chat input::-webkit-input-placeholder{
+    color: rgb(170, 170, 170) !important;
+    font-weight: 400;
+  }
+  
+  #converse-chat input::-moz-placeholder{
+    color: rgb(170, 170, 170) !important;
+    font-weight: 400;
+  }
+  
+  #converse-chat input:-ms-input-placeholder{
+    color: rgb(170, 170, 170) !important;
+    font-weight: 400;
+  }
+  .clienchat-link { text-align: left; padding: 3px 10px; background-color: #f1f1f1; line-height: 10px; }
+  .clienchat-link a { font-family: Helvetica, Arial, Geneva, sans-serif; font-size: 8px; color: #999; text-decoration: none; outline: none; }
+  .converse-no-seen {
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 12px;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+    font-weight: bold;
+    color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  
+  .chat_user_card { display: table; border-top: solid 1px #eee; padding: 10px; cursor: pointer; width: 100%; overflow: hidden; margin-bottom: 10px; }
+  .chat_user:first-child .chat_user_card { border-top: none !important; }
+  .chat_user_image { vertical-align: middle; display: table-cell; text-align: center; width: 58px; padding-top: 5px }
+  .chat_user_image img { width: 48px; height: 48px; margin-right: 5px; margin-left: 5px border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border: solid 1px #eee; }
+  .chat_user_info { display: table-cell; vertical-align: middle; padding-top: 5px; }
+  .chat_user_info .chat_user_cargo { color: #272727; font-size: 12px; font-weight: bold; text-transform: uppercase; line-height: 18px }
+  .chat_user_info .chat_user_nombre { color: #929292; font-size: 14px; }
+  .chat_user_info .chat_user_disponible { display: inline-block; font-size: 10px; background-color:#2fb04e; border-radius: 10px; -moz-border-radius:10px; color: white; padding: 0px 10px; cursor: pointer; line-height: 20px; text-transform: uppercase; }
+  .chat_user_info .chat_user_disponible.chat_user_red { background-color: #cf1035 }
+  .chat_user_form { display: none; }
+  
+  .ocultarWsp { display: none !important; }
+  

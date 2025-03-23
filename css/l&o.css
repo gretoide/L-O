@@ -1,0 +1,87 @@
+.three_box{
+    margin-bottom: 0;
+}
+
+.contact .titlepage h2{
+    color: #e60027;
+}
+
+.banner_main{
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(110 26 26 / 50%)), /* velo gris al 30% */ url(https://www.consumerscu.org/wp-content/uploads/2024/05/Blog-Header-Image-1.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(234 11 11 / 87%); /* negro semitransparente */
+    background-repeat: no-repeat;
+}
+
+.banner_main .blodark{
+    text-shadow: 9px 4px 0px #0d0000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 190px;
+    color: #ffffff;
+    border: 1px black;
+}
+
+.banner_main .read_more{
+    background-color: #25b249;
+}
+.banner_main .read_more:hover{
+    background-color: #25b249;
+    color: white;
+}
+
+.six_box .six_probpx span{
+    color: black;
+}
+
+.red_bg{
+    background-color: #e60027;
+    color: white;
+}
+
+.six_box .red_bg span{
+    color: white;
+}
+
+.white_bg{
+    background-color: white;
+}
+
+footer{
+    color: white;
+}
+
+
+
+@media (max-width: 768px){
+    header{
+        text-align: center;
+    }
+
+    header .se_fonr1{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px){
+    .invert-sm .white_bg{
+        background-color: #e60027;
+        color: white;
+    }
+    .invert-sm .white_bg span{
+        color: white;
+    }
+
+    .invert-sm .red_bg{
+        background-color: white;
+        color: black;
+    }
+
+    .invert-sm .red_bg span{
+        color: black;
+    }
+    .banner_main{
+        background-image: url('../images/electrodomesticos-gastos-luz-euro-rebaja-ocu-lavadora-frigorifico-mb.jpg');
+    }
+}
