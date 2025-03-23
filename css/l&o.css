@@ -7,7 +7,7 @@
 }
 
 .banner_main{
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(110 26 26 / 50%)), /* velo gris al 30% */ url(https://www.consumerscu.org/wp-content/uploads/2024/05/Blog-Header-Image-1.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.436), rgb(110 26 26 / 50%)), /* velo gris al 30% */ url(https://www.consumerscu.org/wp-content/uploads/2024/05/Blog-Header-Image-1.png);
     background-position: center;
     background-size: cover;
     background-color: rgb(234 11 11 / 87%); /* negro semitransparente */
