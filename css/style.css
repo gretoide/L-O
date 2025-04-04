@@ -29,60 +29,40 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-.info-about-services .col-md-6:first-child {
-  background-color: #f9f9f9; /* Fondo clarito para la izquierda */
-  padding: 30px;
-  border-radius: 12px;
-}
-
-.info-about-services .col-md-6:last-child {
-  background-color: #ececec; /* Fondo blanco para la derecha */
-  padding: 30px;
-}
-
-.accordion-button {
-     background-color: #ececec;
-     color: #000; /* Por si querés cambiar el color del texto */
-     font-weight: 600;
- }
-
-.accordion-header {
-     background-color: #ececec;
-}
-
-.accordion-body img {
-
-     border-radius: 15px;
-}
+/*--Esto se agrego el viernes 04/04/2025--*/
+body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+   }
    
-.accordion-body img:hover {
-b
-box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
-background-color: ;
-}
-
-.accordion-body p {
-color: #000000;
-font-size: 1.1rem;
-line-height: 1.6;
-margin: 0 auto;
-max-width: 85%;
-}
+   .contenedor {
+     display: flex;
+     flex-direction: row;       /* 👉 Bloques en fila horizontal */
+     justify-content: space-around;
+     flex-wrap: wrap;           /* 👉 Para que se acomoden si no entran en la pantalla */
+     gap: 20px;
+   }
    
-
-/* Estilo general */
-#subtitulo-services {
-     font-size: 2rem;
+   .item {
+     display: flex;
+     flex-direction: column;    /* 👉 Texto arriba, imagen abajo */
+     align-items: center;
+     width: 120px;
+   }
+   
+   .item p {
+     margin: 5px 0;
      font-weight: bold;
-     margin-bottom: 1.5rem;
-     color: #333;
      text-align: center;
    }
    
-
-#subtitulo-services {
-     font-weight: 600;
-}
+   .item img {
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border-radius: 10px;
+     border: 2px solid #ccc;
+   }  /*<!--Esto se agrego el viernes 04/04/2025-->*/ 
 
 #subtitulo_about {
      font-size: 25px;
@@ -905,8 +885,6 @@ margin: 0 15px 20px 15px;
 }
 
 .gift_box {
-     width: 170px; /* Tamaño fijo para cada caja */
-     height: 200px;
      background-color: #fff;
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
      text-align: center;
@@ -927,7 +905,7 @@ margin: 0 15px 20px 15px;
  
  .gift_box img {
      width: 64px; 
-     height: 64px;
+     height: auto;
      transition: transform 0.3s ease-in-out;
  }
  
