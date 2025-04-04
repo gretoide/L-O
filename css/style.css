@@ -29,6 +29,61 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+.info-about-services .col-md-6:first-child {
+  background-color: #f9f9f9; /* Fondo clarito para la izquierda */
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.info-about-services .col-md-6:last-child {
+  background-color: #ececec; /* Fondo blanco para la derecha */
+  padding: 30px;
+}
+
+.accordion-button {
+     background-color: #ececec;
+     color: #000; /* Por si querés cambiar el color del texto */
+     font-weight: 600;
+ }
+
+.accordion-header {
+     background-color: #ececec;
+}
+
+.accordion-body img {
+
+     border-radius: 15px;
+}
+   
+.accordion-body img:hover {
+b
+box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
+background-color: ;
+}
+
+.accordion-body p {
+color: #000000;
+font-size: 1.1rem;
+line-height: 1.6;
+margin: 0 auto;
+max-width: 85%;
+}
+   
+
+/* Estilo general */
+#subtitulo-services {
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 1.5rem;
+     color: #333;
+     text-align: center;
+   }
+   
+
+#subtitulo-services {
+     font-weight: 600;
+}
+
 #subtitulo_about {
      font-size: 25px;
      font-weight: 800px;
