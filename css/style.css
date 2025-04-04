@@ -844,27 +844,47 @@ margin: 0 15px 20px 15px;
 /** end newslatter section **/
 
 .three_box {
-     margin-bottom: -80px;
+     margin-top: -30px; /* Elimina espacio extra arriba de los íconos */
+     padding-bottom: 80px;
+     font-size: 10px;
 }
 
 .gift_box {
      background-color: #fff;
-     box-shadow: 0px 0px 16px rgba(13, 3, 3, 7%);
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
      text-align: center;
-     padding: 40px 1px;
-     border-radius: 20px;
-}
-
-.gift_box i {
+     padding: 30px 15px; /* Más espacio horizontal */
+     border-radius: 15px;
+     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto suave */
+ }
+ 
+ .gift_box:hover {
+     transform: translateY(-5px); /* Levanta ligeramente al pasar el mouse */
+     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .gift_box i {
      display: block;
-}
-
-.gift_box span {
+     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+ }
+ 
+ .gift_box img {
+     width: 64px; 
+     height: auto;
+     transition: transform 0.3s ease-in-out;
+ }
+ 
+ .gift_box:hover img {
+     transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+ }
+ 
+ .gift_box span {
      color: #212227;
-     font-size: 17px;
-     padding-top: 5px;
+     font-size: 16px;
+     font-weight: 500; /* Hace que el texto se vea más elegante */
      display: block;
-}
+     margin-top: 8px;
+ }
 
 
 /** three_box section **/
@@ -972,11 +992,7 @@ margin: 0 15px 20px 15px;
      padding: 25px 0 40px 0;
 }
 
-.about_text .read_more {
-     background: #212227;
-     color: #fff;
-     padding: 10px 0;
-}
+
 
 .about_text .read_more:hover {
      background: #e60027;
