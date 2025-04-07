@@ -82,6 +82,66 @@
   padding: 30px;
 }
 
+/* ACCORDION */
+
+/* Estilo base para el acordeón */
+.accordion-body {
+     padding: 15px; /* Espacio interno consistente */
+     font-size: 1rem; /* Tamaño de fuente base para el texto */
+   }
+   
+   /* Imágenes dentro del acordeón */
+   .accordion-body img {
+     max-width: 100%; /* Asegura que no desborde */
+     height: auto; /* Mantiene proporciones */
+     margin-bottom: 10px; /* Espacio debajo de la imagen */
+   }
+   
+   /* Título del acordeón */
+   #subtitulo-services {
+     font-size: 1.75rem; /* Tamaño base para el título */
+   }
+   
+   /* Botones del acordeón */
+   .accordion-button {
+     font-size: 1rem; /* Tamaño base para el texto del botón */
+   }
+   
+   /* Ajustes para pantallas medianas (tablets) */
+   @media (max-width: 991.98px) {
+     #subtitulo-services {
+       font-size: 1.5rem; /* Reducir título en tablets */
+     }
+     .accordion-button {
+       font-size: 0.95rem; /* Reducir texto del botón */
+     }
+     .accordion-body {
+       font-size: 0.95rem; /* Reducir texto del cuerpo */
+     }
+     .accordion-body img {
+       max-width: 250px; /* Reducir tamaño máximo de imágenes */
+     }
+   }
+   
+   /* Ajustes para pantallas pequeñas (móviles) */
+   @media (max-width: 767.98px) {
+     #subtitulo-services {
+       font-size: 1.25rem; /* Reducir más el título en móviles */
+     }
+     .accordion-button {
+       font-size: 0.9rem; /* Reducir más el texto del botón */
+     }
+     .accordion-body {
+       font-size: 0.85rem; /* Reducir texto del cuerpo en móviles */
+       padding: 10px; /* Reducir padding en móviles */
+     }
+     .accordion-body img {
+       max-width: 200px; /* Reducir aún más las imágenes en móviles */
+     }
+   }
+
+/*DJFSJ*/
+
 .accordion {
      border-radius: 10px; /* Redondea las esquinas del contenedor */
      overflow: hidden; /* Asegura que los ítems internos respeten el borde redondeado */
