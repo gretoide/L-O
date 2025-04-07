@@ -1,8 +1,40 @@
 
+.three_box .gift_box {
+    padding: 10px; /* Espacio interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    min-height: 100px; /* Altura mínima para consistencia */
+  }
+  
+  .three_box .gift_box img {
+    max-width: 64px; /* Tamaño máximo de la imagen */
+    height: auto;
+  }
+  
+  .three_box .gift_box span {
+    margin-top: 8px; /* Espacio entre imagen y texto */
+    font-size: 0.9rem;
+    word-wrap: break-word; /* Evitar desbordamiento de texto largo */
+  }
+  
+  /* Ajustes para móviles */
+  @media (max-width: 767.98px) {
+    .three_box .gift_box {
+      min-height: 80px; /* Reducir altura en móviles */
+    }
+    .three_box .gift_box img {
+      max-width: 48px; /* Reducir tamaño de íconos en móviles */
+    }
+    .three_box .gift_box span {
+      font-size: 0.85rem; /* Ajustar texto en móviles */
+    }
+  }
+
+
 
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-
-
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media (min-width: 1200px) and (max-width: 1342px) {

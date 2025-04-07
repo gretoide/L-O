@@ -29,10 +29,17 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+/* Contacto responsive en el header */
+
+#telefono_link {
+     padding: 5px;
+}
+
+
+
 /* Sección de servicios extra */
 .seccion-servicios-extra {
-     background-color: #f8f9fa; /* un gris más claro que el anterior */
-     border-top: 2px solid #e0e0e0;
+     background-color: #ffffff; /* un gris más claro que el anterior */
      margin: 20px;
    }
    
@@ -67,28 +74,29 @@
    }
 
 .info-about-services .col-md-6:first-child {
-  background-color: #f9f9f9; /* Fondo clarito para la izquierda */
+  background-color: #ffffff; /* Fondo clarito para la izquierda */
   border-radius: 12px;
 }
 
 .info-about-services .col-md-6:last-child {
-  background-color: #ececec; /* Fondo blanco para la derecha */
   padding: 30px;
 }
 
+.accordion {
+     border-radius: 10px; /* Redondea las esquinas del contenedor */
+     overflow: hidden; /* Asegura que los ítems internos respeten el borde redondeado */
+     background-color: #ffffff; /* Fondo blanco para el acordeón (ajusta según tu diseño) */
+     border: 1px solid #dee2e6; /* Borde sutil para definir el contenedor */
+   }
+
 .accordion-button {
-     background-color: #ececec;
      color: #000; /* Por si querés cambiar el color del texto */
      font-weight: 600;
  }
 
-.accordion-header {
-     background-color: #ececec;
-}
-
 .accordion-body img {
 
-     border-radius: 15px;
+     border-radius: 20px;
 }
    
 .accordion-body img:hover {

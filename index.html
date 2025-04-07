@@ -72,23 +72,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container">
                <div class="row">
                   <div class="col-md-4">
-                     <table id="tabla">
-                        <tr>
-                          <th colspan="2">Contacto</th>
-                        </tr>
-                        <tr>
-                           <td>
-                             <a href="https://api.whatsapp.com/send?phone=5492215342700&text=Hola! Quería hacer una consulta." target="_blank" class="telefono-link">
+                     <div class="contacto-responsive">
+                        <div class="contacto-header">Contacto</div>
+                        <div class="contacto-row">
+                           <a href="https://api.whatsapp.com/send?phone=5492215342700&text=Hola! Quería hacer una consulta." target="_blank" id="telefono_link" class="telefono-link">
                               <i class="bi bi-whatsapp"></i> +54 221 534 2700
-                             </a>
-                           </td>
-                           <td>
-                             <a href="https://api.whatsapp.com/send?phone=5492215982871&text=Hola! Quería hacer una consulta." target="_blank" class="telefono-link">
+                           </a>
+                           <a href="https://api.whatsapp.com/send?phone=5492215982871&text=Hola! Quería hacer una consulta." target="_blank" id="telefono_link" class="telefono-link">
                               <i class="bi bi-whatsapp"></i> +54 221 598 2871
-                             </a>
-                           </td>
-                         </tr>
-                      </table>
+                           </a>
+                        </div>
+                     </div>
                   </div>
                   <div class="col-md-4" id="areas_de_trabajo">
                      <i class="fa-regular fa-location-dot"></i> <b>Áreas de trabajo</b> <br> Berisso · Ensenada · La Plata y alrededores
@@ -136,204 +130,188 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <!-- end banner -->
 
 <!-- unified section with two columns -->
-<section class="info-about-services">
+<section class="info-about-services py-5">
    <div class="container">
-      <div class="row">
-         <!-- Left Column (L&O + Icons) -->
-         <div class="col-md-6">
-            <div class="about">
-               <!-- L&O Information -->
-               <div class="about_text">
-                  <h3 style="color : #e60027">Soluciones profesionales para tu Hogar y tu Empresa</h3>
-                  <p>En L&O, nos especializamos en la reparación y mantenimiento de electrodomésticos con un servicio rápido, confiable y de máxima calidad. Contamos con un equipo de expertos altamente capacitados y con años de experiencia, listos para brindarte la mejor atención.</p> 
-                  <h2 id="subtitulo_about">¿Por qué elegirnos?</h2>
-                  <ul class="checklist" id="checklist">
-                      <li>✅ Diagnóstico preciso y soluciones efectivas</li>
-                      <li>✅ Atención personalizada y garantía en nuestros trabajos</li>
-                      <li>✅ Servicio a domicilio para tu comodidad</li>
-                  </ul>
-              
-                  <p class="final_text">Tu tranquilidad es nuestra prioridad. <strong>¡Dejá tus electrodomésticos en manos de profesionales!</strong></p>               </div>
-               <!-- About Icons -->
-               <div class="about_img">
-               <!--   <img src="icon/icons8/icons8-home-144.png" alt="">
-                  <img src="icon/icons8/icons8-office-96.png" alt=""> -->
-               </div>
-            </div>
-
-            <!-- Three Icon Boxes -->
-            <div class="three_box">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="gift_box">
-                        <i><img src="icon\icons8\worker (1).png" style="width: 64px; height: 64px;"></i>
-                    <!--    <i><img src="icon/icons8/icons8-work-96.png"></i> -->
-                        <span>Somos profesionales</span>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="gift_box">
-                        <i><img src="icon\icons8\certification.png" style="width: 64px; height: 64px;"></i>
-                <!--  <i><img src="icon/icons8/icons8-check-64.png" width="96" height="96"></i> -->
-                        <span>Personal matriculado</span>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="gift_box">
-                        <i><img src="icon\icons8\construction.png"style="width: 64px; height: 64px;"></i>
-                     <!--   <i><img src="icon/icons8/icons8-warranty-96.png"></i> -->
-                        <span>Trabajo de calidad</span>
-                     </div>
-                  </div>
-               </div>
+     <div class="row">
+       <!-- Left Column (L&O + Icons) -->
+       <div class="col-md-6 mb-4">
+         <div class="about">
+           <!-- L&O Information -->
+           <div class="about_text">
+             <h3 class="text-danger">Soluciones profesionales para tu Hogar y tu Empresa</h3>
+             <p>En L&O, nos especializamos en la reparación y mantenimiento de electrodomésticos con un servicio rápido, confiable y de máxima calidad. Contamos con un equipo de expertos altamente capacitados y con años de experiencia, listos para brindarte la mejor atención.</p>
+             <h2 id="subtitulo_about">¿Por qué elegirnos?</h2>
+             <ul class="checklist list-unstyled" id="checklist">
+               <li>✅ Diagnóstico preciso y soluciones efectivas</li>
+               <li>✅ Atención personalizada y garantía en nuestros trabajos</li>
+               <li>✅ Servicio a domicilio para tu comodidad</li>
+             </ul>
+             <p class="final_text">Tu tranquilidad es nuestra prioridad. <strong>¡Dejá tus electrodomésticos en manos de profesionales!</strong></p>
+           </div>
+         </div>
+ 
+         <!-- Three Icon Boxes -->
+      <div class="three_box mt-4">
+         <div class="row g-3">
+         <div class="col-12 col-md-4">
+            <div class="gift_box text-center">
+               <i><img src="icon\icons8\worker (1).png" alt="Profesionales" class="img-fluid" style="max-width: 64px;"></i>
+               <span>Somos profesionales</span>
             </div>
          </div>
-
-         <!-- Right Column (Services) -->
-         <div class="col-md-6">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <h1 id="subtitulo-services" class="mb-4">Instalación, Service & Reparaciones</h1>
-          
-              <!-- Heladeras y Freezers -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <img src="icon/icons_new/frig.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Heladeras y Freezers
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Heladera_Freezer.jpg" alt="Heladeras y Freezers" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Reparamos heladeras y freezers con compromiso, garantía y repuestos originales.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Calefactores y Estufas -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <img src="icon/icons_new/radiator.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Calefactores y Estufas
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Radiador-de-calefacción.jpg" alt="Calefactores y Estufas" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Brindamos mantenimiento y reparación de estufas y calefactores a gas o eléctricos.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Aires Acondicionados -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <img src="icon/icons_new/air-conditioner.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Aires Acondicionados
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Aire_Acondicionado_Colocación.jpg" alt="Aire Acondicionado" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Instalación, carga de gas, limpieza y reparación de aire acondicionado split o ventana.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Termotanques y Calefones -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseCuatro" aria-expanded="false" aria-controls="flush-collapseCuatro">
-                    <img src="icon/icons_new/water-boiler.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Termotanques y Calefones
-                  </button>
-                </h2>
-                <div id="flush-collapseCuatro" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Calefon.jpg" alt="Calefón y Termotanque" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Solucionamos problemas de encendido, fugas o pérdida de presión en calefones y termotanques.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Calderas y Radiadores -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseCinco" aria-expanded="false" aria-controls="flush-collapseCinco">
-                    <img src="icon/icons_new/boiler.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Calderas y Radiadores
-                  </button>
-                </h2>
-                <div id="flush-collapseCinco" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Calderas.jpg" alt="Calderas y Radiadores" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Realizamos mantenimiento y reparación de calderas industriales, domiciliarias y radiadores.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Lavarropas y Secadoras -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSeis" aria-expanded="false" aria-controls="flush-collapseSeis">
-                    <img src="icon/icons_new/washing-machine.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Lavarropas y Secadoras
-                  </button>
-                </h2>
-                <div id="flush-collapseSeis" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Lavarropas.jpg" alt="Lavarropas y Secadoras" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Reparamos lavarropas y secarropas de todas las marcas. Diagnóstico rápido y garantía.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Cocinas y Hornos -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseSiete" aria-expanded="false" aria-controls="flush-collapseSiete">
-                    <img src="icon/icons_new/gas-stove.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Cocinas y Hornos
-                  </button>
-                </h2>
-                <div id="flush-collapseSiete" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Cocina_Horno.jpg" alt="Cocinas y Hornos" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Atendemos cocinas y hornos tanto familiares como industriales. Instalación, limpieza y reparación.</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Lavavajillas -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOcho" aria-expanded="false" aria-controls="flush-collapseOcho">
-                    <img src="icon/icons_new/dishwasher.png" alt="Ícono Calefacción" style="width: 24px; height: 24px; margin-right: 10px;">
-                    Lavavajillas
-                  </button>
-                </h2>
-                <div id="flush-collapseOcho" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body text-center">
-                    <img src="images/Lavavajillas.jpg" alt="Lavavajillas" class="img-fluid mb-3" style="max-width: 300px;">
-                    <p>Diagnóstico y reparación de lavavajillas. Servicio rápido, seguro y garantizado.</p>
-                  </div>
-                </div>
-              </div>
+         <div class="col-12 col-md-4">
+            <div class="gift_box text-center">
+               <i><img src="icon\icons8\certification.png" alt="Matriculado" class="img-fluid" style="max-width: 64px;"></i>
+               <span>Personal matriculado</span>
+            </div>
+         </div>
+         <div class="col-12 col-md-4">
+            <div class="gift_box text-center">
+               <i><img src="icon\icons8\construction.png" alt="Calidad" class="img-fluid" style="max-width: 64px;"></i>
+               <span>Trabajo de calidad</span>
+            </div>
+         </div>
+         </div>
       </div>
+      </div>
+ 
+       <!-- Right Column (Services) -->
+       <div class="col-md-6 mb-4">
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <h1 id="subtitulo-services" class="mb-4">Instalación, Service & Reparaciones</h1>
+ 
+           <!-- Heladeras y Freezers -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                 <img src="icon/icons_new/frig.png" alt="Heladeras" class="me-2" style="width: 24px; height: 24px;">
+                 Heladeras y Freezers
+               </button>
+             </h2>
+             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Heladera_Freezer.jpg" alt="Heladeras y Freezers" class="img-fluid mb-3">
+                 <p>Reparamos heladeras y freezers con compromiso, garantía y repuestos originales.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Calefactores y Estufas -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 <img src="icon/icons_new/radiator.png" alt="Calefacción" class="me-2" style="width: 24px; height: 24px;">
+                 Calefactores y Estufas
+               </button>
+             </h2>
+             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Radiador-de-calefacción.jpg" alt="Calefactores y Estufas" class="img-fluid mb-3">
+                 <p>Brindamos mantenimiento y reparación de estufas y calefactores a gas o eléctricos.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Aires Acondicionados -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 <img src="icon/icons_new/air-conditioner.png" alt="Aire Acondicionado" class="me-2" style="width: 24px; height: 24px;">
+                 Aires Acondicionados
+               </button>
+             </h2>
+             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Aire_Acondicionado_Colocación.jpg" alt="Aire Acondicionado" class="img-fluid mb-3">
+                 <p>Instalación, carga de gas, limpieza y reparación de aire acondicionado split o ventana.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Termotanques y Calefones -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCuatro" aria-expanded="false" aria-controls="flush-collapseCuatro">
+                 <img src="icon/icons_new/water-boiler.png" alt="Termotanques" class="me-2" style="width: 24px; height: 24px;">
+                 Termotanques y Calefones
+               </button>
+             </h2>
+             <div id="flush-collapseCuatro" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Calefon.jpg" alt="Calefón y Termotanque" class="img-fluid mb-3">
+                 <p>Solucionamos problemas de encendido, fugas o pérdida de presión en calefones y termotanques.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Calderas y Radiadores -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCinco" aria-expanded="false" aria-controls="flush-collapseCinco">
+                 <img src="icon/icons_new/boiler.png" alt="Calderas" class="me-2" style="width: 24px; height: 24px;">
+                 Calderas y Radiadores
+               </button>
+             </h2>
+             <div id="flush-collapseCinco" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Calderas.jpg" alt="Calderas y Radiadores" class="img-fluid mb-3">
+                 <p>Realizamos mantenimiento y reparación de calderas industriales, domiciliarias y radiadores.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Lavarropas y Secadoras -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeis" aria-expanded="false" aria-controls="flush-collapseSeis">
+                 <img src="icon/icons_new/washing-machine.png" alt="Lavarropas" class="me-2" style="width: 24px; height: 24px;">
+                 Lavarropas y Secadoras
+               </button>
+             </h2>
+             <div id="flush-collapseSeis" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Lavarropas.jpg" alt="Lavarropas y Secadoras" class="img-fluid mb-3">
+                 <p>Reparamos lavarropas y secarropas de todas las marcas. Diagnóstico rápido y garantía.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Cocinas y Hornos -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSiete" aria-expanded="false" aria-controls="flush-collapseSiete">
+                 <img src="icon/icons_new/gas-stove.png" alt="Cocinas" class="me-2" style="width: 24px; height: 24px;">
+                 Cocinas y Hornos
+               </button>
+             </h2>
+             <div id="flush-collapseSiete" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Cocina_Horno.jpg" alt="Cocinas y Hornos" class="img-fluid mb-3">
+                 <p>Atendemos cocinas y hornos tanto familiares como industriales. Instalación, limpieza y reparación.</p>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- Lavavajillas -->
+           <div class="accordion-item">
+             <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOcho" aria-expanded="false" aria-controls="flush-collapseOcho">
+                 <img src="icon/icons_new/dishwasher.png" alt="Lavavajillas" class="me-2" style="width: 24px; height: 24px;">
+                 Lavavajillas
+               </button>
+             </h2>
+             <div id="flush-collapseOcho" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body text-center">
+                 <img src="images/Lavavajillas.jpg" alt="Lavavajillas" class="img-fluid mb-3">
+                 <p>Diagnóstico y reparación de lavavajillas. Servicio rápido, seguro y garantizado.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
    </div>
-</section>
-<!-- end unified section -->
-
+ </section>
 
 <section class="seccion-servicios-extra py-5 bg-light border-top">
    <div class="container">
@@ -472,7 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <p>© 2025 Hecho por <a href="https://inhouse.com.ar"><b>PiAd Innovations</b></a></p>
+                     <p>© 2025 Hecho por <b>PiAd Innovations</b></a></p>
                   </div>
                </div>
             </div>
