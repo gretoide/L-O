@@ -29,9 +29,46 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+/* Sección de servicios extra */
+.seccion-servicios-extra {
+     background-color: #f8f9fa; /* un gris más claro que el anterior */
+     border-top: 2px solid #e0e0e0;
+     margin: 20px;
+   }
+   
+   /* Imagen del servicio */
+   .seccion-servicios-extra img {
+     max-height: 70px;
+     transition: transform 0.3s ease;
+   }
+   
+   /* Efecto al pasar el mouse */
+   .seccion-servicios-extra .shadow-sm:hover img {
+     transform: scale(1.1);
+   }
+   
+   /* Título debajo de la imagen */
+   .seccion-servicios-extra h6 {
+     font-size: 1.25rem; /* un poco más grande que fs-5 si querés */
+     font-weight: 700;
+     color: #222;
+     margin-top: 0.5rem;
+     transition: color 0.3s ease;
+   }
+   
+   /* Cambio de color al hacer hover sobre la tarjeta */
+   .seccion-servicios-extra .shadow-sm:hover h4 {
+     color: #0d6efd; /* azul Bootstrap */
+   }
+/* Contenedor de otros servicios */
+
+.info-about-services {
+     padding: 2rem; /* o 30px, 40px, según lo que necesites */
+   }
+
 .info-about-services .col-md-6:first-child {
   background-color: #f9f9f9; /* Fondo clarito para la izquierda */
-  padding: 30px;
+  margin: 40px;
   border-radius: 12px;
 }
 
@@ -56,9 +93,7 @@
 }
    
 .accordion-body img:hover {
-b
-box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
-background-color: ;
+     box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
 }
 
 .accordion-body p {
