@@ -1,4 +1,21 @@
 
+@media (max-width: 767px) {
+    #subtitulo-services-titulo {
+      font-size: 1.5rem; /* opcional para ajustar en mobile */
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+/*titulo del accordion*/
+#subtitulo-services-titulo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+  }
+
 .three_box .gift_box {
     padding: 10px; /* Espacio interno */
     display: flex;
@@ -31,6 +48,9 @@
       font-size: 0.85rem; /* Ajustar texto en móviles */
     }
   }
+
+
+/*INFORMACION SERVICIOS*/
 
 
 
